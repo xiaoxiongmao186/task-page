@@ -1,61 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Task Registration</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #fff; max-width: 750px; margin: 0 auto; line-height: 1.5; color: #1a1a1a;
-        }
-        .header-banner {
-            background: #0088cc;
-            padding: 40px 20px;
-            text-align: center;
-            color: #ffffff;
-        }
-        .header-banner .big-icon { font-size: 48px; margin-bottom: 8px; }
-        .header-banner .banner-title { font-size: 28px; font-weight: 800; }
-        .header-banner .banner-sub { font-size: 16px; opacity: 0.85; margin-top: 4px; }
-        .content { padding: 24px 20px; text-align: center; }
-        .trust-badges { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
-        .badge { font-size: 14px; color: #2E7D32; font-weight: 500; }
-        .cta-button {
-            display: block; width: 100%; max-width: 500px; margin: 0 auto 12px;
-            padding: 18px 20px; background: #0088cc; color: #fff; font-size: 20px; font-weight: 700;
-            text-align: center; text-decoration: none; border-radius: 50px;
-            box-shadow: 0 4px 16px rgba(0,136,204,0.35);
-        }
-        .cta-button:active { transform: scale(0.97); }
-        .cta-subtitle { font-size: 14px; color: #666; margin-bottom: 20px; }
-        .urgency-box { background: #FFF3F3; border: 1px solid #FFCCCC; border-radius: 10px; padding: 14px 16px; display: inline-block; }
-        .urgency-text { font-size: 15px; color: #CC0000; font-weight: 700; }
-        .countdown { font-size: 22px; font-weight: 800; color: #CC0000; }
-        .footer-note { font-size: 11px; color: #999; margin-top: 24px; }
-        .footer-note a { color: #999; text-decoration: underline; }
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;background:#fff;max-width:750px;margin:0 auto;color:#1a1a1a}
+        .banner{background:#0088cc;padding:40px 20px;text-align:center;color:#fff}
+        .banner .icon{font-size:48px}
+        .banner h1{font-size:32px;margin:10px 0 0}
+        .banner p{font-size:16px;opacity:0.9}
+        .content{padding:24px 20px;text-align:center}
+        .badges{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+        .badge{font-size:14px;color:#2E7D32;font-weight:500}
+        .btn{display:block;width:100%;max-width:500px;margin:0 auto 12px;padding:18px 20px;background:#0088cc;color:#fff;font-size:20px;font-weight:700;text-align:center;text-decoration:none;border-radius:50px;box-shadow:0 4px 16px rgba(0,136,204,0.35)}
+        .btn:active{transform:scale(0.97)}
+        .urgency{background:#FFF3F3;border:1px solid #FFCCCC;border-radius:10px;padding:14px 16px;display:inline-block}
+        .urgency p{font-size:15px;color:#CC0000;font-weight:700}
+        .countdown{font-size:22px;font-weight:800;color:#CC0000}
+        .footer-note{font-size:11px;color:#999;margin-top:24px}
+        .footer-note a{color:#999;text-decoration:underline}
     </style>
 </head>
 <body>
-    <div class="header-banner">
-        <div class="big-icon">💰</div>
-        <div class="banner-title">कल की कमाई</div>
-        <div class="banner-sub">आपने क्या कमाया?</div>
+    <div class="banner">
+        <div class="icon">💰</div>
+        <h1>कल की कमाई</h1>
+        <p>आपने क्या कमाया?</p>
     </div>
     <div class="content">
-        <div class="trust-badges">
+        <div class="badges">
             <span class="badge">✅ 50,000+ Indians joined</span>
             <span class="badge">✅ Daily Payment</span>
             <span class="badge">✅ No Investment</span>
         </div>
-        <!-- ⚠️ 替换这里为你的TG链接 -->
-        <a class="cta-button" href="https://dlto.cc/2Vj2Agqv" >
+        <!-- 替换下方链接为你的 TG 链接 -->
+        <a href="https://dlto.cc/2Vj2Agqv" class="btn">
             📱 Join Telegram & Get Task
         </a>
-        <div class="cta-subtitle">Instant access. No waiting.</div>
-        <div class="urgency-box">
-            <div class="urgency-text">⚠️ Today's free registration closes in:</div>
+        <p style="font-size:14px;color:#666;margin-bottom:20px">Instant access. No waiting.</p>
+        <div class="urgency">
+            <p>⚠️ Today's free registration closes in:</p>
             <div class="countdown" id="countdown">09:59</div>
         </div>
         <div class="footer-note">
