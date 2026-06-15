@@ -5,182 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Task Registration</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #ffffff;
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 0;
-            line-height: 1.5;
-            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #fff; max-width: 750px; margin: 0 auto; line-height: 1.5; color: #1a1a1a;
         }
-        
-        .header-image {
-            width: 100%;
-            display: block;
-        }
-        
-        .content {
-            padding: 24px 20px;
-            text-align: center;
-        }
-        
-        .main-title {
-            font-size: 32px;
-            font-weight: 800;
-            color: #1a1a1a;
-            margin-bottom: 6px;
-        }
-        
-        .sub-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #39FF14;
-            margin-bottom: 20px;
-        }
-        
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 28px;
-        }
-        
-        .badge {
-            font-size: 14px;
-            color: #2E7D32;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-        
-        .cta-button {
-            display: block;
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto 12px;
-            padding: 18px 20px;
+        .header-banner {
             background: #0088cc;
-            color: #ffffff;
-            font-size: 20px;
-            font-weight: 700;
+            padding: 40px 20px;
             text-align: center;
-            text-decoration: none;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(0, 136, 204, 0.35);
-            transition: transform 0.1s;
+            color: #ffffff;
         }
-        
-        .cta-button:active {
-            transform: scale(0.97);
+        .header-banner .big-icon { font-size: 48px; margin-bottom: 8px; }
+        .header-banner .banner-title { font-size: 28px; font-weight: 800; }
+        .header-banner .banner-sub { font-size: 16px; opacity: 0.85; margin-top: 4px; }
+        .content { padding: 24px 20px; text-align: center; }
+        .trust-badges { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+        .badge { font-size: 14px; color: #2E7D32; font-weight: 500; }
+        .cta-button {
+            display: block; width: 100%; max-width: 500px; margin: 0 auto 12px;
+            padding: 18px 20px; background: #0088cc; color: #fff; font-size: 20px; font-weight: 700;
+            text-align: center; text-decoration: none; border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(0,136,204,0.35);
         }
-        
-        .cta-subtitle {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .urgency-box {
-            background: #FFF3F3;
-            border: 1px solid #FFCCCC;
-            border-radius: 10px;
-            padding: 14px 16px;
-            margin-top: 8px;
-            display: inline-block;
-        }
-        
-        .urgency-text {
-            font-size: 15px;
-            color: #CC0000;
-            font-weight: 700;
-        }
-        
-        .countdown {
-            font-size: 22px;
-            font-weight: 800;
-            color: #CC0000;
-        }
-        
-        .footer-note {
-            font-size: 11px;
-            color: #999;
-            margin-top: 24px;
-        }
-        
-        .footer-note a {
-            color: #999;
-            text-decoration: underline;
-        }
+        .cta-button:active { transform: scale(0.97); }
+        .cta-subtitle { font-size: 14px; color: #666; margin-bottom: 20px; }
+        .urgency-box { background: #FFF3F3; border: 1px solid #FFCCCC; border-radius: 10px; padding: 14px 16px; display: inline-block; }
+        .urgency-text { font-size: 15px; color: #CC0000; font-weight: 700; }
+        .countdown { font-size: 22px; font-weight: 800; color: #CC0000; }
+        .footer-note { font-size: 11px; color: #999; margin-top: 24px; }
+        .footer-note a { color: #999; text-decoration: underline; }
     </style>
 </head>
 <body>
-
-    <!-- 顶部图片：替换 src 为你的收款截图或真人自拍图的URL -->
-    <img class="header-image" 
-         src="https://i.imgur.com/L4SlFJl.jpeg" 
-         alt="Task Payment Screenshot">
-
+    <div class="header-banner">
+        <div class="big-icon">💰</div>
+        <div class="banner-title">कल की कमाई</div>
+        <div class="banner-sub">आपने क्या कमाया?</div>
+    </div>
     <div class="content">
-        <!-- 印地语钩子标题 -->
-        <div class="main-title">कल की कमाई</div>
-        <div class="sub-title">आपने क्या कमाया?</div>
-        
-        <!-- 信任小标 -->
         <div class="trust-badges">
             <span class="badge">✅ 50,000+ Indians joined</span>
             <span class="badge">✅ Daily Payment</span>
             <span class="badge">✅ No Investment</span>
         </div>
-        
-        <!-- TG蓝色大按钮：替换 href 为你的TG链接 -->
+        <!-- ⚠️ 替换这里为你的TG链接 -->
         <a class="cta-button" href="https://dlto.cc/2Vj2Agqv" target="_blank">
-            📱 Join Telegram &amp; Get Task
+            📱 Join Telegram & Get Task
         </a>
         <div class="cta-subtitle">Instant access. No waiting.</div>
-        
-        <!-- 动态倒计时紧迫区 -->
         <div class="urgency-box">
             <div class="urgency-text">⚠️ Today's free registration closes in:</div>
             <div class="countdown" id="countdown">09:59</div>
         </div>
-        
-        <!-- 底部隐藏隐私链接 -->
         <div class="footer-note">
-            By clicking above, you agree to our 
-            <a href="#">Privacy Policy</a>
+            By clicking above, you agree to our <a href="#">Privacy Policy</a>
         </div>
     </div>
-
     <script>
-        // 倒计时逻辑：从9分59秒开始倒数
-        let totalSeconds = 9 * 60 + 59; // 9:59
-        
-        function updateCountdown() {
-            const minutes = Math.floor(totalSeconds / 60);
-            const seconds = totalSeconds % 60;
+        let totalSeconds = 9*60+59;
+        function updateCountdown(){
+            const m = Math.floor(totalSeconds/60);
+            const s = totalSeconds%60;
             document.getElementById('countdown').textContent = 
-                String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
-            
-            if (totalSeconds > 0) {
-                totalSeconds--;
-            } else {
-                // 倒计时归零后重置为9:59，制造无限紧迫感
-                totalSeconds = 9 * 60 + 59;
-            }
+                String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+            if(totalSeconds>0) totalSeconds--;
+            else totalSeconds = 9*60+59;
         }
-        
         updateCountdown();
-        setInterval(updateCountdown, 1000);
+        setInterval(updateCountdown,1000);
     </script>
-
 </body>
 </html>
